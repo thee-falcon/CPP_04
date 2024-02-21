@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:27 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/21 18:30:06 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/21 21:48:28 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,19 @@
 class Animal
 {
 protected:
-    std::string protectedType;
+    // protected attribute.
+    std::string type;
     
 public:
-    Animal(std::string type);
-    ~Animal();
+    // constructor:
+    Animal( void );
+    // destructor:
+    ~Animal( void );
+    // copy constructor:
+    Animal( const Animal& other);
+    // assignement operator:
+   Animal& operator=( const Animal& other );
+   
     
     void    makeSound();
 };

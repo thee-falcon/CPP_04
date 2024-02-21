@@ -6,7 +6,14 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:38 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/19 17:12:39 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/21 21:44:12 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+# include "Animal.hpp"
+
+// class   Cat : public Animal {
+
+//     Cat( void );
+//     ~Cat( void );
+// }
