@@ -6,19 +6,19 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:13:00 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 21:07:14 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 21:32:19 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongAnimal.hpp"
 
-WrongAnimal::WrongAnimal( void ) : type("Wrong Animal") {
+WrongAnimal::WrongAnimal( void ) : type("WrongAnimal") {
     std::cout << "Default Constructor: " << this->type << " is called!" << std::endl;
 }
 
 WrongAnimal::WrongAnimal( std::string type ) : type( type )
 {
-    std::cout << "WrongAnimal " << this->type << " Constructor called!" << std::endl;
+    std::cout << "Constructor called: " << this->type  << std::endl;
 }
 
 WrongAnimal::~WrongAnimal ( void ) {

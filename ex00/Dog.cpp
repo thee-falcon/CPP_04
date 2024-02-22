@@ -6,14 +6,14 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:43 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 20:47:11 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 21:30:49 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog( void ) {
-    std::cout << "Default Constructor: " << this->type << " is called!" << std::endl;
+Dog::Dog( void ) : Animal("Dog") {
+    std::cout << "Constructor: " << this->type << " is called!" << std::endl;
 }
 
 Dog::~Dog ( void ) {
