@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
+/*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:27 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/21 21:48:28 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 17:04:21 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,10 @@ protected:
     std::string type;
     
 public:
+    /* ####################################
+    #          Orthodox Style             #
+    # ################################### */
+
     // constructor:
     Animal( void );
     // destructor:
@@ -31,8 +35,12 @@ public:
     // assignement operator:
    Animal& operator=( const Animal& other );
    
+   // virtual, it allows derived classes to override that function with their own implementation.
+   // it allows you to use a pointer or reference to the base class type to call the overridden function in a derived class.
+    virtual void    makeSound( void ) const;
     
-    void    makeSound();
+    // Used const in the getType function declaration to indicate that it doesn't modify the object.
+    std::string     getType( void ) const;
 };
 
 #endif

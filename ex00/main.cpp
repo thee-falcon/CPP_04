@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
+/*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:54 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/21 21:48:15 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 17:07:39 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int main()
 {
+    // use a pointer or reference to the base class type to call the overridden function in a derived class.
     const Animal* meta = new Animal();
     // const Animal* j = new Dog();
     // const Animal* i = new Cat();
