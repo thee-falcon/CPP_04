@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:54 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 18:30:32 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 20:46:20 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,11 @@ int main()
     std::cout << j->getType() << " " << std::endl;
     std::cout << i->getType() << " " << std::endl;
     i->makeSound(); //will output the cat sound!
-    j->makeSound();
+    j->makeSound(); // output the dog sound!
     meta->makeSound();
+    delete j;
+    delete i;
+    delete meta;
     
     return (0);
 }

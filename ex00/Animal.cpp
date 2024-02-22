@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:21 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 18:49:49 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 21:06:26 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Animal::Animal( std::string type ) : type( type )
 }
 
 Animal::~Animal( void ) {
-    std::cout << "Default Constructor: " << this->type << " is called!" << std::endl;
+    std::cout << "Destructor: " << this->type << " is called!" << std::endl;
 }
 
 Animal::Animal( const Animal& other) {

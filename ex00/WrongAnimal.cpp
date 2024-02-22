@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:13:00 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 18:52:45 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 21:07:14 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ WrongAnimal::WrongAnimal( std::string type ) : type( type )
 }
 
 WrongAnimal::~WrongAnimal ( void ) {
-    std::cout << "Default Constructor: " << this->type << " is called!" << std::endl;
+    std::cout << "Destructor: " << this->type << " is called!" << std::endl;
 }
 
 WrongAnimal::WrongAnimal( const WrongAnimal& other) {

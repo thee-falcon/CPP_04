@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:13:19 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 18:47:54 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 21:07:36 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ WrongCat::WrongCat( void ) {
 }
 
 WrongCat::~WrongCat ( void ) {
-    std::cout << "Default Constructor: " << this->type << " is called!" << std::endl;
+    std::cout << "Destructor: " << this->type << " is called!" << std::endl;
 }
 
 WrongCat::WrongCat( const WrongCat& other) {

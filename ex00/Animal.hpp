@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:27 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 18:48:45 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 20:56:52 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ public:
     Animal( void );
     Animal( std::string type );
     // destructor:
-    ~Animal( void );
+    virtual ~Animal( void );
     // copy constructor:
     Animal( const Animal& other);
     // assignement operator:
