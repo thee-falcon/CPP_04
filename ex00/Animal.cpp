@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:21 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 17:06:20 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 18:49:49 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 Animal::Animal( void ) : type("Animal") {
     std::cout << "Default Constructor: " << this->type << " is called!" << std::endl;
+}
+
+Animal::Animal( std::string type ) : type( type )
+{
+    std::cout << "Animal " << this->type << " Constructor called!" << std::endl;
 }
 
 Animal::~Animal( void ) {
@@ -34,7 +39,7 @@ Animal& Animal::operator=( const Animal& other) {
 }
 
 void    Animal::makeSound( void ) const {
-    std::cout << "makeSound Called" << this->type << std::endl;
+    std::cout << "makeSound Called " << this->type << std::endl;
 }
 
 std::string Animal::getType( void ) const {

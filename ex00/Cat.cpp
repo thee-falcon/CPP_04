@@ -6,13 +6,13 @@
 /*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:33 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 17:19:52 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 18:50:37 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat( void ) {
+Cat::Cat( void ):  Animal("Cat") {
     std::cout << "Default Constructor: " << this->type << " is called!" << std::endl;
 }
 

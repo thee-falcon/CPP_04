@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:27 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 17:04:21 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/22 18:48:45 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ public:
 
     // constructor:
     Animal( void );
+    Animal( std::string type );
     // destructor:
     ~Animal( void );
     // copy constructor:
