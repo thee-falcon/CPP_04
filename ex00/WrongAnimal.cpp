@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:13:00 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 21:32:19 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/23 16:50:19 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ WrongAnimal::WrongAnimal( std::string type ) : type( type )
 }
 
 WrongAnimal::~WrongAnimal ( void ) {
-    std::cout << "Destructor: " << this->type << " is called!" << std::endl;
+    std::cout << "Wrong Animal Destructor is called!" << std::endl;
 }
 
 WrongAnimal::WrongAnimal( const WrongAnimal& other) {

@@ -6,13 +6,15 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:54 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 20:46:20 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/23 17:04:00 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
 
 int main()
 {
@@ -25,9 +27,25 @@ int main()
     i->makeSound(); //will output the cat sound!
     j->makeSound(); // output the dog sound!
     meta->makeSound();
-    delete j;
-    delete i;
-    delete meta;
+
+    // deallocation
+    delete  meta;
+    delete  j;
+    delete  i;
+
+    std::cout << "\n################################### More Tests ####################################\n" << std::endl;
+
+    const WrongAnimal* k = new WrongAnimal();
+    const WrongAnimal* l = new WrongCat();
+    std::cout << k->getType() << " " << std::endl;
+    std::cout << l->getType() << " " << std::endl;
+    k->makeSound();
+    l->makeSound();
+
+    // deallocation
+    delete  k;
+    delete  l;
+    
     
     return (0);
 }
