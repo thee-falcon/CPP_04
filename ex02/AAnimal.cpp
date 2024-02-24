@@ -1,36 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   AAnimal.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:21 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 21:21:46 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/24 19:32:51 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 
-Animal::Animal( void ) : type("Animal") {
+AAnimal::AAnimal( void ) : type("AAnimal") {
     std::cout << "Default Constructor: " << this->type << " is called!" << std::endl;
 }
 
-Animal::Animal( std::string type ) : type( type )
+AAnimal::AAnimal( std::string type ) : type( type )
 {
-    std::cout << "Animal " << this->type << " Constructor called!" << std::endl;
+    std::cout << "AAnimal " << this->type << " Constructor called!" << std::endl;
 }
 
-Animal::~Animal( void ) {
-    std::cout << "Destructor Animal is called!" << std::endl;
+AAnimal::~AAnimal( void ) {
+    std::cout << "Destructor AAnimal is called!" << std::endl;
 }
 
-Animal::Animal( const Animal& other) {
+AAnimal::AAnimal( const AAnimal& other) {
     std::cout << "Copy Constructor: " << this->type << " is called!" << std::endl;
     *this = other;
 }
 
-Animal& Animal::operator=( const Animal& other) {
+AAnimal& AAnimal::operator=( const AAnimal& other) {
     std::cout << "Assignement Operator: " << this->type << " is called!" << std::endl;
     if (this != &other) {
         this->type = other.type;
@@ -38,10 +38,10 @@ Animal& Animal::operator=( const Animal& other) {
     return (*this);
 }
 
-void    Animal::makeSound( void ) const {
-    std::cout << "makeSound Animal Called " << this->type << std::endl;
+void    AAnimal::makeSound( void ) const {
+    std::cout << "makeSound AAnimal Called " << this->type << std::endl;
 }
 
-std::string Animal::getType( void ) const {
+std::string AAnimal::getType( void ) const {
     return (this->type);
 }

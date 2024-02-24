@@ -6,16 +6,16 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:48 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/24 16:58:22 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/24 19:35:07 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DOG_HPP
 # define DOG_HPP
 
-# include "Animal.hpp"
+# include "AAnimal.hpp"
 
-class Dog : public Animal {
+class Dog : public AAnimal {
     Brain*  _brain;
 public:
     /* ####################################

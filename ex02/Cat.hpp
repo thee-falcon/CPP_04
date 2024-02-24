@@ -6,16 +6,16 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:38 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/24 16:58:17 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/24 19:36:24 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CAT_HPP
 # define CAT_HPP
 
-# include "Animal.hpp"
+# include "AAnimal.hpp"
 
-class Cat : public Animal {
+class Cat : public AAnimal {
     Brain*  _brain;
 public:
     /* ####################################

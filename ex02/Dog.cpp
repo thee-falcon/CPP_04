@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:43 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/24 18:55:52 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/24 19:37:34 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ std::endl   : If an exception is caught, this line outputs an error message to t
 e.what()    : Function provides a description of the exception.
 */
 // constructor:
-Dog::Dog( void ) : Animal("Dog") {
+Dog::Dog( void ) : AAnimal("Dog") {
     std::cout << "Dog constructor called." << std::endl;
     try {
         this->_brain = new Brain();

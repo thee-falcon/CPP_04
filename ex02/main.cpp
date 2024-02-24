@@ -6,23 +6,24 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 17:08:59 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/24 19:10:07 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/24 20:50:02 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
 
 int main()
 {
-    const Animal* j = new Dog();
-    const Animal* i = new Cat();
+    const AAnimal* j = new Dog();
+    const AAnimal* i = new Cat();
+    // AAnimal A;we can't create an instance of AAnimal because it's a absaract class
 
     delete j; // deallocate memorey
     delete i; // deallocate memorey
 
-    const Animal* animals[4];
+    const AAnimal* animals[4];
     animals[0] = new Dog();
     animals[1] = new Dog();
     animals[2] = new Cat();

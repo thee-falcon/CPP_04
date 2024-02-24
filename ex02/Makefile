@@ -6,13 +6,13 @@
 #    By: omakran <omakran@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/23 17:09:02 by omakran           #+#    #+#              #
-#    Updated: 2024/02/23 17:09:55 by omakran          ###   ########.fr        #
+#    Updated: 2024/02/24 19:31:42 by omakran          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 EXEC = Brain
 
-SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongCat.cpp WrongAnimal.cpp Brain.cpp
+SRCS = main.cpp AAnimal.cpp Dog.cpp Cat.cpp WrongCat.cpp WrongAnimal.cpp Brain.cpp
 
 OBJS := $(SRCS:.cpp=.o)
 

@@ -6,13 +6,13 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:33 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/24 18:57:44 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/24 19:38:28 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat( void ):  Animal("Cat") {
+Cat::Cat( void ):  AAnimal("Cat") {
     std::cout << "Constructor: " << this->type << " is called!" << std::endl;
     try {
         this->_brain = new Brain();
