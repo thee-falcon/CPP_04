@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:38 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 17:15:03 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/24 16:58:17 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,8 @@
 
 # include "Animal.hpp"
 
-class Cat : public Animal
-{
-
+class Cat : public Animal {
+    Brain*  _brain;
 public:
     /* ####################################
     #          Orthodox Style             #

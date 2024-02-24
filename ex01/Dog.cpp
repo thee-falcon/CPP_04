@@ -6,18 +6,35 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:43 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/22 21:30:49 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/24 18:55:52 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
+/*
+-try        : The try keyword starts a block of code where an exception might be thrown. It allows you to catch and handle exceptions.
+-brain      : Pointer (which is a member of the class) is assigned the address of the newly allocated Brain object.
+-catch      : Block that is executed if an exception of type std::bad_alloc (which is the standard exception type thrown by the new operator on allocation failure)
+              is thrown within the corresponding try block.
+std::endl   : If an exception is caught, this line outputs an error message to the standard error stream (std::cerr). It indicates that memory allocation for the Dog or Cat object's brain has failed.
+e.what()    : Function provides a description of the exception.
+*/
+// constructor:
 Dog::Dog( void ) : Animal("Dog") {
-    std::cout << "Constructor: " << this->type << " is called!" << std::endl;
+    std::cout << "Dog constructor called." << std::endl;
+    try {
+        this->_brain = new Brain();
+    }
+    catch (const std::bad_alloc& e) {
+        std::cerr << "Failed to allocate memory for Dog's brain: " << e.what() << std::endl;
+    }
 }
+
 
 Dog::~Dog ( void ) {
     std::cout << "Destructor : " << this->type << " is called!" << std::endl;
+    delete  this->_brain;
 }
 
 Dog::Dog( const Dog& other) {

@@ -6,13 +6,13 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 17:08:59 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/23 17:39:50 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/24 19:10:07 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "animal.hpp"
-#include "dog.hpp"
-#include "cat.hpp"
+#include "Animal.hpp"
+#include "Dog.hpp"
+#include "Cat.hpp"
 
 int main()
 {
