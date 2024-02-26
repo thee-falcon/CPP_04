@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 17:08:52 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/24 16:51:44 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/26 18:31:18 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ Brain::Brain(const Brain& other)
     {
         _ideas[i] = other._ideas[i];
     }
-    std::cout << "Copy Constructor is called!" << std::endl;
+    std::cout << "Copy Constructor is Called!" << std::endl;
 }
 
 // assignment operator:
