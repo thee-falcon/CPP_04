@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:43 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/26 17:02:36 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/26 18:18:45 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ e.what()    : Function provides a description of the exception.
 */
 
 Dog::Dog( void ) : Animal("Dog") {
-    std::cout << "Constructor: " << this->type << " is called!" << std::endl;
+    std::cout << "Constructor: " << this->type << " is Called!" << std::endl;
     try {
         this->_brain = new Brain();
     }
@@ -33,18 +33,18 @@ Dog::Dog( void ) : Animal("Dog") {
 
 
 Dog::~Dog ( void ) {
-    std::cout << "Destructor : " << this->type << " is called!" << std::endl;
+    std::cout << "Destructor : " << this->type << " is Called!" << std::endl;
     delete  this->_brain;
 }
 
 Dog::Dog( const Dog& other) {
-    std::cout << "Copy Constructor: " << this->type << " is called!" << std::endl;
+    std::cout << "Copy Constructor: " << this->type << " is Called!" << std::endl;
     this->_brain = new Brain();
     *this = other;
 }
 
 Dog& Dog::operator=( const Dog& other) {
-    std::cout << "Assignement Operator: " << this->type << " is called!" << std::endl;
+    std::cout << "Assignement Operator: " << this->type << " is Called!" << std::endl;
     if (this != &other) {
         this->type = other.type;
         // this->_brain is already allocated, we need to free it, to use it again, and Free the leaks.
