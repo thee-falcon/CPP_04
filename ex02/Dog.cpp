@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:43 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/24 19:37:34 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/26 17:25:43 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 std::endl   : If an exception is caught, this line outputs an error message to the standard error stream (std::cerr). It indicates that memory allocation for the Dog or Cat object's brain has failed.
 e.what()    : Function provides a description of the exception.
 */
-// constructor:
+
 Dog::Dog( void ) : AAnimal("Dog") {
     std::cout << "Dog constructor called." << std::endl;
     try {
@@ -39,6 +39,7 @@ Dog::~Dog ( void ) {
 
 Dog::Dog( const Dog& other) {
     std::cout << "Copy Constructor: " << this->type << " is called!" << std::endl;
+    this->_brain = new Brain();
     *this = other;
 }
 
@@ -46,10 +47,15 @@ Dog& Dog::operator=( const Dog& other) {
     std::cout << "Assignement Operator: " << this->type << " is called!" << std::endl;
     if (this != &other) {
         this->type = other.type;
+        // this->_brain is already allocated, we need to free it, to use it again, and Free the leaks.
+        if (this->_brain)
+            delete this->_brain;
+        // adding the Deep Copy.
+        this->_brain = new Brain(*other._brain);
     }
     return (*this);
 }
 
 void    Dog::makeSound( void ) const {
-    std::cout << "woof ruff ruff arf!" << std::endl;
+    std::cout << "wooffff ruff ruffffff arrrrrrrfffffffffffffffffffffff!" << std::endl;
 }

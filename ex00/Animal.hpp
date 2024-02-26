@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:27 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/23 16:59:41 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/26 16:12:41 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ public:
     Animal( std::string type );
     // destructor:
     /*
-    virtual destructor: it ensures that the destructors of both the base and derived classes are called correctly
-    when deleting an object through a pointer to the base class.
-    Without the virtual keyword in the base class destructor, only the base class destructor would be called,
-    leading to incomplete cleanup in the case of polymorphic objects.
+        virtual destructor: it ensures that the destructors of both the base and derived classes are called correctly
+        when deleting an object through a pointer to the base class.
+        Without the virtual keyword in the base class destructor, only the base class destructor would be called,
+        leading to incomplete cleanup in the case of polymorphic objects.
     */
     virtual ~Animal( void );
     // copy constructor:

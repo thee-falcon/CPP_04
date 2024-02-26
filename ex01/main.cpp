@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 17:08:59 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/24 19:10:07 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/26 17:10:05 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int main()
 
     for (int i = 0; i < 4; ++i)
     {
-        animals[i]->makeSound();
+        // animals[i]->makeSound();
         delete animals[i];
     }
 

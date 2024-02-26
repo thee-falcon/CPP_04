@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:21 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/24 19:32:51 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/26 16:33:08 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,6 @@ AAnimal& AAnimal::operator=( const AAnimal& other) {
         this->type = other.type;
     }
     return (*this);
-}
-
-void    AAnimal::makeSound( void ) const {
-    std::cout << "makeSound AAnimal Called " << this->type << std::endl;
 }
 
 std::string AAnimal::getType( void ) const {

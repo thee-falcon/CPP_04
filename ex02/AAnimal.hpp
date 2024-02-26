@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:12:27 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/24 20:52:16 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/26 17:28:34 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ public:
    
    // virtual, it allows derived classes to override that function with their own implementation.
    // it allows you to use a pointer or reference to the base class type to call the overridden function in a derived class.
-    virtual void    makeSound( void ) const = 0;//pure virtual function
+    virtual void    makeSound( void ) const = 0; //pure virtual function
     //we call a class have only pure virtual functions INTERFACE
     
     // Used const in the getType function declaration to indicate that it doesn't modify the object.
